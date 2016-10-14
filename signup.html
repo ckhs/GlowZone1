@@ -19,7 +19,7 @@ input[type=text], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #0000CD;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -29,7 +29,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color:  #1E90FF;
 }
 
 div {
@@ -40,7 +40,20 @@ div {
 </style>
 <body>
 
-<h3 style="color:white">VIP Sign Up</h3>
+<center><h1>Sign up for VIP access</h1></center>
+<center><p> Become a Glow Zone™ VIP member and save money on your next visit! Membership starts from as low as $9.99 a month. </center>
+
+<br>
+</br>
+<br>
+</br>
+
+<h3 style="color:black";>Regular VIP Membership: </h3>
+<p> Enjoy free pass anytime to Glow Zone arcade, can invite up to 3 people for FREE. Note: Free Food and drinks do not come with this offer. </p>
+
+<h3 style="color:black";>Deluxe VIP Membership: </h3>
+<p> Free pass, enjoy free games. Food buffet is free till 10:00 p.m. </p>
+
 
 <div>
   <form action="action_page.php">
@@ -49,15 +62,19 @@ div {
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname">
-      
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email">
 
-    <label for="country">State</label>
+ <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname">
+
+<label for="laddress">Address</label>
+    <input type="text" id="lname" name="lastname">
+
+
+    <label for="country">Membership plan</label>
     <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+      <option value="australia">Regular ($9.99)</option>
+      <option value="canada">Deluxe ($14.99)</option>
+      
     </select>
   
     <input type="submit" value="Submit">
@@ -66,3 +83,4 @@ div {
 
 </body>
 </html>
+
