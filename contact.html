@@ -100,5 +100,33 @@ body {
     </center
 
         
-<style
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCq_C0u53KbSXBiX6qTplNXuGyyI5Fao0Q'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.com/'>add google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0aa2d8d1b654be417df9dc64077936ffa70bce32'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(32.4609764,-84.98770939999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.4609764,-84.98770939999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Glow Zone Arcade</strong><br>Columbus, GA<br>06510 New Haven<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+ <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -32.4610, lng: -84.9877};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHDW1YbnaerB1qP8eDrrQGtI_DT02fbeA&callback=initMap">
+    </script>
+  </body>
+        <style
+        
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCq_C0u53KbSXBiX6qTplNXuGyyI5Fao0Q'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.com/'>add google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0aa2d8d1b654be417df9dc64077936ffa70bce32'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(32.4609764,-84.98770939999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.4609764,-84.98770939999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Glow Zone Arcade</strong><br>Columbus, GA<br>06510 New Haven<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
